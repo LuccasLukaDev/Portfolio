@@ -1,0 +1,210 @@
+/* GENERICAS E TESTE */
+html{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+a:active{
+    color: paleturquoise;
+}
+
+a:hover{
+    color: orange;
+}
+
+
+hr{
+    margin-left: 10%;
+}
+
+h4{
+    margin: 0.15em;
+
+}
+
+/* CABEÇALHO E NAVBAR */
+.headerMainPage{
+    padding: 1%;
+    background-color: lightgray;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+
+.navBar{
+    display: flex;
+    flex-flow: row;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.navMenu{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.navMenu > a{
+    margin-right: 5px;
+    font-size: large;
+    transition: 1s ease;
+}
+
+.navMenu > a:hover{
+    transform: translateY(-0.3em);
+}
+
+.logo{
+    height: 5em;
+    transition: 1s ease;
+}
+
+.logo:hover{
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    transform: translateY(-0.3em);
+}
+
+
+/* CORPO E MAIN CONTAINERS */
+main{
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+}
+
+.mainImageSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0em 0em 1em;
+    border-radius: 0.1em;
+    box-shadow: 0.1em 0.1em 1em black;
+    transition: 0.5s ease;
+}
+
+.mainImageSection:hover{
+    box-shadow: 0.1em 0.1em 0.5em black;
+    transform: translateY(-0.3em);
+}
+
+.banner{
+    width: 500em;
+    height: 20em;
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px;
+}
+
+.sectionRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.sectionRow > section{
+    width: 45%;
+    min-width: 23.94em;
+    padding: 1%;
+    margin: 0.5em;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(223, 223, 223);
+    transition: 0.3s ease;
+}
+
+.sectionRow > section:hover{
+    background-color: rgb(240, 152, 152);
+    box-shadow: 0.1em 0.1em 0.5em black;
+    transform: translateY(-0.3em);
+}
+
+.sectionRow > article {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.sectionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgSection {
+    width: 60%;
+    height: 13em;
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    height: 7em;
+    margin-top: 5em;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 40%;
+}
+
+.footerHorizontalLine{
+    border: 1px solid black;
+    height: 6em;
+}
+
+/*@media (max-width: 1024px) {
+    .navBar {
+        flex-direction: row;
+    }
+
+    .navMenu {
+        flex-direction: row;
+    }
+
+    .logo {
+        height: 4em;
+    }
+
+    .banner {
+        align-self: center;
+        min-width: 22em;
+        width: auto;
+        max-width: 23em;
+        height: auto;
+    }
+
+    .mainImageSection{
+        align-self: center;
+        display: flex;
+    }
+
+    .sectionRow > section {
+        min-width: 350px;
+        max-width: none;
+    }
+} */
