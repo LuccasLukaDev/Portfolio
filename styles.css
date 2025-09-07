@@ -9,6 +9,10 @@ body{
     background-color: rgb(255, 231, 231);
 }
 
+main > .mainImageSection{
+    margin-top: 6.5em;
+}
+
 a{
     text-decoration: none;
     color: red;
@@ -39,10 +43,11 @@ h2{
 
 /* CABEÇALHO E NAVBAR */
 .headerMainPage{
-    padding: 1%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
     background-color: lightgray;
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navBar{
@@ -58,10 +63,11 @@ h2{
     justify-content: center;
     align-items: center;
     color: red;
+    margin-right: 0.5em;
 }
 
 .navMenu > a{
-    margin-right: 5px;
+    margin-right: 0.5em;
     font-size: large;
     transition: 1s ease;
 }
@@ -215,7 +221,7 @@ footer{
 } */
 
 
-/* PÁGINA CONTATO */
+/* ======================= PÁGINA CONTATO ======================= */
 
 
 /* GENERICAS */
@@ -239,7 +245,7 @@ section textarea{
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.5em 3em;
     margin-bottom: 2em;
 }
 .containerAux{
@@ -258,6 +264,8 @@ section textarea{
     background-color: lightgray;
     box-shadow: 0.1em 0.1em 1em;
     padding: 0.5em;
+    margin: 1em 1em;
+    min-width: 20.5em;
 }
 
 .faixa{
@@ -298,7 +306,7 @@ section textarea{
 
 .divBody > p{
     padding: 0;
-    margin: 0.2em 0em;
+    margin: 0.5em 0em 0em 0em;
 }
 
 .divFoto{
