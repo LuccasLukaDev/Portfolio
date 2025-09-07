@@ -31,14 +31,35 @@ hr{
     margin-left: 10%;
 }
 
-h4{
-    margin: 0.15em;
-
+h1{
+    border-bottom: 1px black solid;
+    margin: 0em 0em;
+    padding: 0.3em;
+    text-align: center;
 }
 
 h2{
     margin: 0.4em;
     padding: 0;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+}
+
+h4{
+    margin: 0.15em;
+
+}
+
+ul{
+    padding: 0em 0.7em;
+    margin: 1em 0.5em;
+}
+
+li{
+    margin: 0;
 }
 
 /* CABEÇALHO E NAVBAR */
@@ -281,7 +302,7 @@ section textarea{
     display: flex;
     flex-flow: column wrap;
     justify-content: stretch;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: lightgray;
     border-radius: 10px;
     box-shadow: 0.1em 0.1em 1em;
@@ -322,4 +343,49 @@ section textarea{
 .imgFoto{
     height: 5em;
     border-radius: 200px;
+}
+
+/* ======================= PÁGINA SOBRE ======================= */
+
+.sobreBody{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.sobreBody p{
+    margin: 0em;
+}
+
+.sobreBody hr{
+    align-self: center;
+    margin: 0.5em 0.5em;
+}
+
+.sobreBodyRow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sobreImg{
+    width: 100%;
+    height: 20em;
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    align-self: center;
+    margin: 1em 0em;
+}
+
+.finalImg{
+    width: 100%;
+    height: 21em;
+    align-self: center;
+    margin: 0;
+}
+
+.explicacao{
+    padding: 1em;
+    margin: 0em 1em 0em 1em;
+    max-width: 30em;
+    border-radius: 10px;
 }
