@@ -1,0 +1,391 @@
+/* GENERICAS */
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 231, 231);
+}
+
+main > .mainImageSection{
+    margin-top: 6.5em;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+a:active{
+    color: paleturquoise;
+}
+
+a:hover{
+    color: orange;
+}
+
+
+hr{
+    margin-left: 10%;
+}
+
+h1{
+    border-bottom: 1px black solid;
+    margin: 0em 0em;
+    padding: 0.3em;
+    text-align: center;
+}
+
+h2{
+    margin: 0.4em;
+    padding: 0;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+}
+
+h4{
+    margin: 0.15em;
+
+}
+
+ul{
+    padding: 0em 0.7em;
+    margin: 1em 0.5em;
+}
+
+li{
+    margin: 0;
+}
+
+/* CABEÇALHO E NAVBAR */
+.headerMainPage{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background-color: lightgray;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navBar{
+    display: flex;
+    flex-flow: row;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.navMenu{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    margin-right: 0.5em;
+}
+
+.navMenu > a{
+    margin-right: 0.5em;
+    font-size: large;
+    transition: 1s ease;
+}
+
+.navMenu > a:hover{
+    transform: translateY(-0.3em);
+}
+
+.logo{
+    height: 5em;
+    transition: 1s ease;
+}
+
+.logo:hover{
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    transform: translateY(-0.3em);
+}
+
+
+/* CORPO E MAIN CONTAINERS */
+main{
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+}
+
+.mainImageSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0em 0em 1em;
+    border-radius: 0.1em;
+    box-shadow: 0.1em 0.1em 1em black;
+    transition: 0.5s ease;
+}
+
+.mainImageSection:hover{
+    box-shadow: 0.1em 0.1em 0.5em black;
+    transform: translateY(-0.3em);
+}
+
+.banner{
+    width: 500em;
+    height: 20em;
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px;
+}
+
+.sectionRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.sectionRow > section{
+    width: 45%;
+    min-width: 23.94em;
+    padding: 1%;
+    margin: 0.5em;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.sectionRow > section:hover{
+    background-color: rgb(240, 152, 152);
+    box-shadow: 0.1em 0.1em 0.5em black;
+    transform: translateY(-0.3em);
+}
+
+.sectionRow > article {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.sectionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgSection {
+    width: 60%;
+    height: 13em;
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    height: 7em;
+    margin-top: 5em;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 40%;
+}
+
+.footerHorizontalLine{
+    border: 1px solid black;
+    height: 6em;
+}
+
+/*@media (max-width: 1024px) {
+    .navBar {
+        flex-direction: row;
+    }
+
+    .navMenu {
+        flex-direction: row;
+    }
+
+    .logo {
+        height: 4em;
+    }
+
+    .banner {
+        align-self: center;
+        min-width: 22em;
+        width: auto;
+        max-width: 23em;
+        height: auto;
+    }
+
+    .mainImageSection{
+        align-self: center;
+        display: flex;
+    }
+
+    .sectionRow > section {
+        min-width: 350px;
+        max-width: none;
+    }
+} */
+
+
+/* ======================= PÁGINA CONTATO ======================= */
+
+
+/* GENERICAS */
+section input, button{
+    margin-bottom: 1em;
+}
+
+section textarea{
+    width: auto;
+    min-height: 5em;
+    max-height: 10em;
+    min-width: 20em;
+    max-width: 25em;
+    margin-bottom: 1em;
+}
+
+
+/* CORPO E MAIN CONTAINERS */
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em 3em;
+    margin-bottom: 2em;
+}
+.containerAux{
+    width: 10dvw;
+    height: 40dvh;
+}
+
+.formulario{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 0.1em 0.1em 1em;
+    padding: 0.5em;
+    margin: 1em 1em;
+    min-width: 20.5em;
+}
+
+.faixa{
+    border-bottom: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0em 1em;
+    margin-bottom: 1em;
+}
+
+
+.divContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: stretch;
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 1em;
+    padding: 0.5em;
+}
+
+.divCardHeader{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.divBody{
+    display: flex;
+    flex-flow: column wrap;
+    border-top: 1px solid black;
+    margin: 0.5em 0em;
+    padding: 0.2em;
+}
+
+.divBody > p{
+    padding: 0;
+    margin: 0.5em 0em 0em 0em;
+}
+
+.divFoto{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: lightcoral;
+    border-radius: 200px;
+    padding: 0.3em;
+    margin: 0em 0.5em 0em 0em;
+}
+
+.imgFoto{
+    height: 5em;
+    border-radius: 200px;
+}
+
+/* ======================= PÁGINA SOBRE ======================= */
+
+.sobreBody{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.sobreBody p{
+    margin: 0em;
+}
+
+.sobreBody hr{
+    align-self: center;
+    margin: 0.5em 0.5em;
+}
+
+.sobreBodyRow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sobreImg{
+    width: 100%;
+    height: 20em;
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    align-self: center;
+    margin: 1em 0em;
+}
+
+.finalImg{
+    width: 100%;
+    height: 21em;
+    align-self: center;
+    margin: 0;
+}
+
+.explicacao{
+    padding: 1em;
+    margin: 0em 1em 0em 1em;
+    max-width: 30em;
+    border-radius: 10px;
+}
