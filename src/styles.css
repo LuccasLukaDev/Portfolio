@@ -256,11 +256,12 @@ footer{
         min-width: 0;
         margin: 0.5em 0;
         padding: 2%;
+        min-height: 20em;
     }
 
     .imgSection {
         width: 80%;
-        height: 10em;
+        height:12em;    
     }
 
     section > article {
@@ -268,7 +269,7 @@ footer{
     }
 
     article > a > div > p {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
     h2 {
@@ -292,6 +293,42 @@ footer{
     .footerHorizontalLine {
         display: none;
     }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* importante para o topo */
+        align-items: center; /* centraliza horizontalmente */
+        padding: 0.5em 1em;
+    }
+
+    .formulario {
+        width: 95%;        /* mesma largura do card debaixo */
+        min-width: 0 !important;   /* força remover a largura mínima */
+        max-width: 100%;   /* limita ao tamanho da tela */
+        box-sizing: border-box;
+    }
+
+    section input {
+        width: 100%;       /* garante que inputs e textarea fiquem dentro do card */
+        min-width: 0 !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .divContainer {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .finalImg{
+        width: 95% !important;
+    }
+
+    .sobreImg {
+        width: 95% !important;
+    }
+    
 }
 
 /* ======================= PÁGINA CONTATO ======================= */
