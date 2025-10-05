@@ -7,10 +7,11 @@ html{
 body{
     margin: 0;
     background-color: rgb(255, 231, 231);
+    font-family: 'Montserrat', sans-serif;
 }
 
 main > .mainImageSection{
-    margin-top: 6.5em;
+    margin-top: 5em;
 }
 
 a{
@@ -89,7 +90,7 @@ li{
 
 .navMenu > a{
     margin-right: 0.5em;
-    font-size: large;
+    font-size: medium;
     transition: 1s ease;
 }
 
@@ -116,27 +117,35 @@ main{
     border-top: none;
 }
 
-.mainImageSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0em 0em 1em;
-    border-radius: 0.1em;
-    box-shadow: 0.1em 0.1em 1em black;
-    transition: 0.5s ease;
+.mainImageSection {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 5em;
+  border-radius: 0.1em;
+  transition: 0.5s ease;
 }
 
-.mainImageSection:hover{
-    box-shadow: 0.1em 0.1em 0.5em black;
-    transform: translateY(-0.3em);
+.banner {
+  display: block;
+  width: 100%;
+  max-height: 25em;
+  object-fit: cover;
 }
 
-.banner{
-    width: 500em;
-    height: 20em;
-    border-top-left-radius:0px;
-    border-top-right-radius: 0px;
+.mainImageSection::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  pointer-events: none;
+  background: linear-gradient(to bottom,rgba(255, 231, 231, 0) 0%,rgba(255, 231, 231, 1) 100%);
 }
+
 
 .sectionRow{
     display: flex;
@@ -150,9 +159,10 @@ main{
     min-width: 23.94em;
     padding: 1%;
     margin: 0.5em;
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     transition: 0.3s ease;
+    background-color: rgb(255, 243, 243);
+    box-shadow: 0.05em 0.1em 0.5em black;
 }
 
 .sectionRow > section:hover{
@@ -184,7 +194,20 @@ section > article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1em;
+}
+
+article > a{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+article > a:hover{
+    color: black;
 }
 
 footer{
@@ -194,6 +217,7 @@ footer{
     background-color: lightgray;
     height: 7em;
     margin-top: 5em;
+    font-size: 1em;
 }
 
 .footerContainer{
@@ -209,38 +233,66 @@ footer{
     height: 6em;
 }
 
-/*@media (max-width: 1024px) {
-    .navBar {
-        flex-direction: row;
-    }
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
 
-    .navMenu {
-        flex-direction: row;
-    }
-
-    .logo {
-        height: 4em;
+    /* Main Image Section */
+    .mainImageSection {
+        margin: 4em 0 2em;
     }
 
     .banner {
-        align-self: center;
-        min-width: 22em;
-        width: auto;
-        max-width: 23em;
-        height: auto;
+        max-height: 15em;
     }
 
-    .mainImageSection{
-        align-self: center;
-        display: flex;
+    /* Section Rows and Cards */
+    .sectionRow {
+        flex-direction: column;
+        align-items: center;
     }
 
     .sectionRow > section {
-        min-width: 350px;
-        max-width: none;
+        width: 90%;
+        min-width: 0;
+        margin: 0.5em 0;
+        padding: 2%;
     }
-} */
 
+    .imgSection {
+        width: 80%;
+        height: 10em;
+    }
+
+    section > article {
+        font-size: 0.9em;
+    }
+
+    article > a > div > p {
+        font-size: 0.85em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+        font-size: 0.9em;
+    }
+
+    .footerContainer {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerHorizontalLine {
+        display: none;
+    }
+}
 
 /* ======================= PÁGINA CONTATO ======================= */
 
