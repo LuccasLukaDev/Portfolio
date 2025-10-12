@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Lucas da Silva Alves</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="name-img">
+            <img class="self-img" alt="foto_lucas.jpeg" src="img/foto_lucas_curriculo.jpeg">
+            <div>
+                <h1>Lucas da Silva Alves</h1>
+                <h3>Desenvolvedor Fullstack</h2>
+            </div>
+        </div>
+
+        <button onclick="showSide()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="menu-navbar" id="menu-navbar">
+            <a href="#"><h3>Inicio</h3></a>
+            <a href="#"><h3>Sobre</h3></a>
+        </div>
+    </nav>
+    
+    <div id="overlay" class="overlay" onclick="closeSide()"></div>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#"><h3>Inicio</h3></a>
+        <a href="#"><h3>Sobre</h3></a>
+    </div>
+    <main>
+        <div>
+            <h1>Formações e Tecnologias Conhecidas</h1>
+            <div class="main-page">
+                <div class="card-formacoes">
+                    <ul>
+                        <h3>Formações</h3>
+                        <li>Formação 1</li>
+                        <li>Formação 2</li>
+                        <li>Formação 3</li>
+                        <li>Formação 4</li>
+                    </ul>
+                </div>
+                <div class="card-tecnologias">
+                    <h3>Tecnologias</h3>
+                </div>
+            </div>
+            <div class="side">
+                <h2>Meus Projetos</h2>
+                <div class="projects-main">
+                    <div class="project">
+                        <h2>Projeto 1</h2>
+                        <img src="" alt="placeholder.png">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum incidunt fuga ipsam numquam soluta nihil sapiente quisquam accusantium aut eos ut, perspiciatis necessitatibus eum blanditiis consequuntur architecto non vel aliquid.
+                    </div>
+                    <div class="project">
+                        <h2>Projeto 1</h2>
+                        <img src="" alt="placeholder.png">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis velit accusantium, expedita quasi illum dolorem quaerat sed rerum. Nulla libero repellendus laboriosam natus autem quaerat numquam neque perferendis doloremque.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>2025@Lucas da Silva / @LuccasLukaDev / @izacnewtonn Todos os direitos reservados </footer>
+</body>
+</html>
