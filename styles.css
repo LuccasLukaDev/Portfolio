@@ -145,9 +145,9 @@ nav a:hover{
         transition: all 0.3s ease-in-out;
     }
 
-    /* Optional: Add hover effect */
+    
     nav button:hover .bar {
-        background-color: #a3d4a3; /* Lighter green on hover */
+        background-color: #a3d4a3;
     }
 }
 
@@ -160,9 +160,6 @@ nav a:hover{
         margin: 0em 0.5em 0em 0em;
     }
     
-    .self-img{
-
-    }
 }
 
 /* MAIN */
@@ -211,6 +208,12 @@ main{
     max-width: 40em;
 }
 
+.card-tecnologias ul{
+    padding: 0;
+    margin: 0em 0em 1em 0em;
+    list-style: none;
+}
+
 .side{
     display: flex;
     flex-flow: column wrap;
@@ -241,7 +244,7 @@ main{
 
 
 
-@media(max-width:800px) {
+@media(max-width:800px){
     main{
         margin: 100px 0.5em 0em 0.5em;
         flex-flow: column;
@@ -263,6 +266,17 @@ main{
     .projects-main{
         flex-flow: column wrap;
         gap: 20px;
+    }
+}
+
+@media(max-width: 550px){
+
+    .card-formacoes{
+        min-width: 22em;
+    }
+
+    .card-tecnologias{
+        min-width: 22em;
     }
 }
 
