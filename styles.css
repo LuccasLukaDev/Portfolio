@@ -3,8 +3,8 @@ body{
     background-color: gray;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, #2c3e2c, #1a1a1a);
-    color: #c4d7c4;
+    background: white;
+    color: black;
     text-align: center;
 }   
 
@@ -14,7 +14,7 @@ body{
     right: -250px;
     width: 200px;
     height: 100vh;
-    background-color: #2c3e2c;
+    background-color: #0f1c15;
     box-shadow: -5px 0 8px rgba(0, 0, 0, 0.2);
     padding: 2em 1.5em;
     display: flex;
@@ -61,13 +61,13 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: #1b1b1b;
+    background-color: #0f1c15;
     color: #c4d7c4;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 998;
-    box-shadow:#c4d7c4 0px -5px 280px 0px;
+    box-shadow:#000000 0px 1px 5px 0px;
 }
 
 nav h1,
@@ -75,6 +75,7 @@ nav h2,
 nav h3 {
     margin: 8px 0;
     padding: 0;
+    text-align: left;
 }
 
 nav button{
@@ -171,6 +172,8 @@ main{
     min-height: calc(100vh - 112px);
     margin-top: 115px;
     gap: 10px;
+    color: black;
+    
 }
 
 .main-page{
@@ -185,12 +188,18 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.4);
-    box-shadow: -5px 0 8px rgba(0, 0, 0, 0.2);
-    border: #2c3e2c solid 2px;
+    background: #dff7e8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: #333333 solid 2px;
     border-radius: 20px;
     min-width: 30em;
     max-width: 40em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-formacoes:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-formacoes ul{
@@ -201,11 +210,18 @@ main{
 
 .card-tecnologias{
     border: #2c3e2c solid 2px;
-    background: rgba(0,0,0,0.4);
-    box-shadow: -5px 0 8px rgba(0, 0, 0, 0.2);
+    background: #dff7e8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: #333333 solid 2px;
     border-radius: 20px;
     min-width: 30em;
     max-width: 40em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-tecnologias:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .card-tecnologias ul{
@@ -233,20 +249,27 @@ main{
 .project{
     display: flex;
     flex-direction: column;
-    background: rgba(0,0,0,0.4);
-    box-shadow: -5px 0 8px rgba(0, 0, 0, 0.2);
-    border: #2c3e2c solid 2px;
+    background: #dff7e8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: #333333 solid 2px;
     border-radius: 20px;
     padding: 1em;
+    min-height: 15.3125em;
     min-width: 18em;
     max-width: 30em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
 
 @media(max-width:800px){
     main{
-        margin: 100px 0.5em 0em 0.5em;
+        margin: 7em 0.5em 0em 0.5em;
         flex-flow: column;
         justify-content: space-evenly;
     }
@@ -281,4 +304,8 @@ main{
 }
 
 /* FOOTER */
-footer{}
+footer{
+    background-color: #0f1c15;
+    color: #c4d7c4;
+    padding: 1em;
+}
