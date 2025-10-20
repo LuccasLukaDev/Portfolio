@@ -207,6 +207,8 @@ main{
 
 .card-apresentacao p {
   margin-bottom: 18px;
+  background: whitesmoke;
+  padding: 0.5em;
 }
 
 .btn-curriculo {
@@ -358,8 +360,8 @@ main{
     min-height: 18em;
     max-height: 20em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    height: 200px; /* define altura fixa igual para todas */
-    object-fit: cover; /* mantém proporção e corta se necessário */
+    height: 200px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
